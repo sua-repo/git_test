@@ -33,21 +33,27 @@ class Grade:
             return "가"
         
 
-def main() :
-    grade = Grade()
-    kor = int(input("국어 성적: "))
-    eng = int(input("영어 성적: "))
-    math = int(input("수학 성적: "))
+def main () : 
+    while True :
+        grade = Grade()
+        kor = int(input("국어 성적: "))
+        eng = int(input("영어 성적: "))
+        math = int(input("수학 성적: "))
 
-    grade.set_kor(kor)
-    grade.set_eng(eng)
-    grade.set_math(math)
+        grade.set_kor(kor)
+        grade.set_eng(eng)
+        grade.set_math(math)
 
 
-    print("총합:", grade.get_total())
-    print("평균:", grade.get_avg()) 
-    print("최종 성적 등급:", grade.get_grade())
+        print("총합:", grade.get_total())
+        print("평균:", grade.get_avg()) 
+        print("최종 성적 등급:", grade.get_grade())
 
+        continue_yn = input("그만하시겠습니까? (y / n)")
+        if continue_yn.upper() == "Y" or continue_yn.upper() == "YES" : 
+            break
+        
+    print("프로그램 종료")
     
 
 main()
