@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import routes from './route/Routes'
 import Header from './components/Header'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <>
