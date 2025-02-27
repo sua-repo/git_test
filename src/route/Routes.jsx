@@ -4,8 +4,11 @@ import BoardPage from "../pages/BoardPage"
 import BootStrapPage from "../pages/BootStrapPage"
 import ConditionalPage from "../pages/ConditionalPage"
 import CounterPage from "../pages/CounterPage"
+import GradeInputPage from "../pages/GradeInputPage"
+import GradeInputPage2 from "../pages/GradeInputPage2"
 import HelloPage from "../pages/HelloPage"
 import HomePage from "../pages/HomePage"
+import InputPage from "../pages/InputPage"
 import JSXPage from "../pages/JSXPage"
 import ProfilePage from "../pages/ProfilePage"
 import PropsPage from "../pages/PropsPage"
@@ -97,6 +100,24 @@ const routes = [
         path: '/axiosclient',
         element: <AxiosClient/>,
         title: 'axios-client',
+      },
+
+      {
+        path: '/input',
+        element: <InputPage/>,
+        title: 'input',
+      },
+
+      {
+        path: '/grade',
+        element: <GradeInputPage/>,
+        title: 'grade',
+      },
+
+      {
+        path: '/grade2',
+        element: <GradeInputPage2/>,
+        title: 'grade2',
       },
 ]
 export default routes
